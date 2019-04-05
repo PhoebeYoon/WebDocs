@@ -1,0 +1,461 @@
+
+* {margin: 0; padding: 0}
+a, a:hover, a:active, a:visited {text-decoration: none; color: #444; border: 0}
+img {border: none;}
+ul {list-style: none; overflow: hidden;}
+div.container {width: 1180px; margin-left: auto; margin-right: auto; overflow: hidden;}
+.cf:after {content: ""; display: block; clear: both;}
+
+
+@media only screen and (max-width: 1180px){
+	div.container {width: 100%;}	
+}
+
+
+
+/*==========================================
+	폰트
+==========================================*/
+body { font-family:'KoPub Batang', serif; font-weight: 700; color: #444; }
+
+
+/*==========================================
+	내비
+==========================================*/
+nav {width: 100%;  background: #f4d9b8; position: fixed; z-index: 1030; text-align: center;}
+nav div.container div.logo {margin: 10px 0 10px 5px; float: left;}
+nav div.container div.logo img {float: left; }
+nav div.navbar {display: block;}
+nav div.navbar ul {float: right; margin: 12px 5px 8px 0;}
+nav div.navbar ul li { float: left; }
+nav div.navbar ul li a {display: block; text-align: center;
+	font-family: 'KoPub Dotum'; font-weight: 700; font-size: 20px;
+	width: 200px;
+	padding: 15px}
+
+
+@media only screen and (max-width: 1180px){
+	nav {height: auto}
+	nav div.navbar ul li a {font-size: 20px; 
+	width: 150px;
+	padding: 15px}
+}
+
+@media only screen and (max-width: 720px){
+	nav div.container div.logo { margin: 5px; height: 40px}
+	nav div.container div.logo img {height: 100%;min-width: 51px}
+	nav div.navbar ul li a {font-size: 18px;
+	width: 100px;
+	padding: 3px}
+}
+
+@media only screen and (max-width: 400px){
+	nav div.container div.logo {float: none; height: 40px; width: 200px; margin: 0 auto; margin-top: 5px}
+	nav div.container div.logo img {height: 100%; min-width: 51px; float: none;}
+	nav div.navbar ul {float: none; width: 100%;text-align: center; margin: 10px 0 5px}
+	nav div.navbar ul li {width: 33.3%; text-align: center; }
+	nav div.navbar ul li a {font-size: 14px; width: 100%;
+	padding: 3px}
+}
+
+/*==========================================
+	메인 >>> #page_top
+==========================================*/
+#page_top {
+	width: 100%; 
+	background: url(../images/m_bg.jpg) top center no-repeat fixed;
+	padding: 80px 0 100px 0
+}
+
+.m_f {width: 33.3%; float: left; margin-top: 15%;}
+.m_f_1 {width: 100px; height: 20px; background:#3a72a9; transition: 1s; margin-top: 100%;float: right;}
+.m_f_1:hover {width: 200px}
+.m_f_3 {width: 0; height: 0;
+		border-color:  #c03939 transparent transparent #c03939 ;
+        border-style:solid;
+        margin-left: 10px; top: 10%;
+        
+        border-width: 30px;
+    	transition: 1s;
+    	transform: 1s}
+.m_f_3:hover {transform: rotate(360deg);}
+
+.mean {width: 33.3%; bottom: 20px; float: left; margin-top: 20%; text-align: center;}
+.mean span {display: inline-block;
+	font-size: 18px;
+	font-family: 'KoPub Dotum'; font-weight: 700;
+	letter-spacing: 5px;
+	border: 7px solid #c03939;
+	padding: 5px 30px; 
+	color: #c03939;}
+.m_f_2 {width: 20px; height: 140px; background:#5e303b; float: right; margin-top: 20%;transition: 1s;}
+.m_f_2:hover {height: 200px;}
+.motion {width: 33.3%; margin: 0 auto; text-align: center; float: left; margin-top: 25%; padding-bottom: 80px}
+
+
+@media only screen and (max-width: 1180px){
+	#page_top {background-size: 160%; min-width: 100%}
+	.m_f {display: none;}
+	.mean {width: 100%; float: none; margin-top: 30px; }
+	.mean span {display: inline-block;}
+	.motion {width:100%; float: none; margin-top: 20%; padding-bottom: 0}
+}
+
+@media only screen and (max-width: 720px){
+	.mean span {font-size: 15px; padding: 5px 20px}
+	.motion img {width: 100px}
+}
+
+@media only screen and (max-width: 400px){
+	#page_top {background-position: -110px 80px; padding: 120px 0 100px 0}
+	.motion img {width: 80px}
+}
+
+
+/*==========================================
+	#hana
+==========================================*/
+.hana_left {width: 50%; float: left; height: 1000px;  position: relative; padding-top: 80px; background: url(../images/hana_bg.jpg) #5e303b no-repeat center fixed;}
+.hana_left .hr {width: 100%; height: 1px; background: #fff; margin-top: 80px; position: absolute;}
+.hana_left .hr:hover {width: 100%; height: 1px; background: #fff; transition: 0.5s}
+.hana_left .left_text {float:right; font-size: 140px; padding: 80px 40px 0 0; color: #fff; font-weight: 300}
+.hana_left .left_text div:nth-child(2) {color: rgba(255,255,255,0.8);}
+.hana_left .left_text div:nth-child(3) {color: rgba(255,255,255,0.3);}
+.hana_left .left_text div:nth-child(4) {color: rgba(255,255,255,0.6);}
+.hana_left .h_f_1 {width: 7px; height: 29px; background: #fff; float: right; margin-top: 30px}
+
+.hana_right {width: 50%; background: #c03939; float: right; padding-top: 80px; height: 1000px;}
+.hana_right .text {float: left; padding: 80px 0 100px 80px; color: #fff;}
+.hana_right .h_f_2 {width: 7px; height: 29px; background: #fff; margin-bottom: 30px}
+.hana_right div:nth-child(2) {font-family: 'KoPub Dotum'; font-size: 18px; font-weight: 300}
+.hana_right div:nth-child(3) {font-size: 24px; font-weight: 300; margin: 10px 0 30px 0}
+.hana_right .text span {font-size: 80px; background: #fff; color: #c03939; line-height: 100px;}
+.hana_right .text p {font-size: 16px; font-family: 'KoPub Dotum'; font-weight: 300; line-height: 24px; margin-top: 30px}
+.hana_right .text a {
+	display: inline-block; 
+	margin-top: 40px;
+	position: relative; 
+	padding: 10px 50px;
+	border:7px solid #fff; 
+	color:#fff; font-family: 'KoPub Dotum'; font-weight: 300; font-size: 20px; 
+	text-align: center;
+	transition: all 0.5s;
+}
+.hana_right .text a:after {content: '\00bb'; position: absolute; transition: 0.5s; opacity: 0; right: -10px; bottom: 12px;}
+.hana_right .text a:hover {background: #fff; color: #c03939; transition: 0.5s; }
+.hana_right .text a:hover:after {opacity: 1; right: 20px; font-weight: 700}
+
+@media only screen and (max-width: 1180px){
+	#hana {background: #c03939}
+	.hana_left {width: 100%; float: none; height: 500px}
+	.hana_left .hr {width: 30%; margin-top: 40px}
+	.hana_left .left_text {padding: 30px 0 0 0;}
+	.hana_left .left_text div {float: left; font-size: 80px; padding: 0 10px;}
+	.hana_left .h_f_1 {display: none;}
+
+	.hana_right {width: 100%; float: none; padding-top: 10px; height: auto; display: inline-block;}
+	.hana_right .text {padding: 50px;}
+}
+
+@media only screen and (max-width: 720px){
+	#hana {padding-bottom: 20px}
+	.hana_left .left_text div {font-size: 40px; padding: 0 5px}
+
+	.hana_right {height: 100%;}
+	.hana_right .text {padding: 30px; }
+	.hana_right div:nth-child(3) {font-size: 20px}
+	.hana_right .text span {font-size: 40px; line-height: 50px}
+	.hana_right .text p {font-size: 15px}
+}
+
+/*==========================================
+	#experience
+==========================================*/
+#experience {background: #f4d9b8; text-align: center; }
+#experience .container {text-align: center;}
+#experience .container > h2 {padding-top: 100px; font-size: 70px; letter-spacing: 20px; text-transform: uppercase; color: #fff; }
+#experience .content {width: 24%; padding-top: 100px; font-family: 'KoPub Dotum'; font-weight: 300;
+	margin: 0 auto; display: inline-block; vertical-align: top;}
+#experience .content img {width: 100%; max-width: 156px; height: auto; margin-bottom: 15px;}
+#experience .content span {color: #fff; font-size: 18px; letter-spacing: 5px;}
+#experience .content p:first-of-type {font-weight: 700; padding: 15px 0 5px 0; font-size: 20px;}
+
+
+@media only screen and (max-width: 1180px){
+	#experience .container > h2 {font-size: 40px; }
+	#experience .content { padding: 60px 20px 0 20px;}
+	#experience .content span {font-size: 14px}
+	#experience .content p { font-size: 13px;}
+	#experience .content p:first-of-type {font-size: 18px}
+}
+
+@media only screen and (max-width: 720px){
+	#experience .container > h2 {font-size: 30px; letter-spacing: 5px}
+	#experience .content {width: 49%}
+	#experience .content img {width: 90%}
+}
+
+
+
+/*==========================================
+	#portfolio
+==========================================*/
+#portfolio {padding-top: 80px; background: #f4d9b8}
+
+#portfolio .portfolio-item {
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	border-right: 0.5px solid #e9e9e9;
+	border-bottom: 0.5px solid #e9e9e9;
+}
+#portfolio .portfolio-item .portfolio-link {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(192, 57, 57, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+	margin-top: -12px;
+	font-weight: 300;
+	letter-spacing: 10px;
+	font-size: 30px
+}
+
+article {height: auto; text-align: center; background: #fff; }
+article {padding: 10px}
+article img {width: 100%; height: auto; max-width:419px; margin-bottom: 20px;}
+article div { width: 29px; height: 7px; background: #444; margin: 0 auto; margin-bottom: 20px}
+article h2 {font-weight: 700; font-size: 32px; font-family: 'KoPub Dotum'; letter-spacing: -2px}
+article p {font-weight: 300;font-size:17px; letter-spacing: 10px; margin-top: 20px; padding-bottom: 30px}
+
+#portfolio * {
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1180px){
+	#portfolio .portfolio-item {width: 33.3%}
+	#portfolio .portfolio-item .portfolio-link .caption .caption-content i {font-size: 20px}
+	article div {margin-bottom: 10px}
+	article h2 {font-size: 26px}
+	article p {font-size: 15px; letter-spacing: 5px}
+}
+
+
+@media only screen and (max-width: 720px){
+	#portfolio {padding-top: 50px;}
+	#portfolio .portfolio-item {width: 50%}
+}
+
+@media only screen and (max-width: 400px){
+	#portfolio {padding-top: 80px;}
+}
+
+
+/*==========================================
+	#ability
+==========================================*/
+#ability {background: url(../images/abi_bg.jpg) #5e303b top center no-repeat fixed;
+	text-align: center;}
+#ability .container > h2 {padding-top: 100px; font-size: 70px; letter-spacing: 20px; text-transform: uppercase; color: #fff; }
+#ability .content {width: 24%; padding: 100px 0 ; font-family: 'KoPub Dotum'; font-weight: 300;
+	margin: 0 auto; display: inline-block; vertical-align: top;}
+#ability .content img {width: 100%; max-width: 106px; height: auto; margin-bottom: 10px;}
+#ability .content span {color: #fff; font-size: 18px; letter-spacing: 5px}
+#ability .content p {color: #f4d9b8; font-size: 100px; font-weight: 700 }
+#ability .content p:after {content: "%"}
+
+@media only screen and (max-width: 1180px){
+	#ability .container > h2 {font-size: 40px;}
+	#ability .content {}
+	#ability .content span {font-size: 14px}
+	#ability .content p { font-size: 50px;}
+}
+
+@media only screen and (max-width: 720px){
+	#ability .container {padding-bottom: 60px}
+	#ability .container > h2 {font-size: 30px; letter-spacing: 5px}
+	#ability .content {width: 49%; padding: 60px 0 0 0;}
+	#ability .content img {width: 50%}
+	#ability .content p {font-size: 40px}
+}
+
+/*==========================================
+	#contact
+==========================================*/
+#contact {background: #e7e2e2; padding-top: 80px}
+#contact .container > div {float: left;}
+.con_img {padding: 50px 0 100px 0; width: 60%; box-sizing: border-box; }
+.con_text {padding-top: 280px; width: 40%; float: right; box-sizing: border-box;}
+.con_text p:nth-child(1) {font-family: 'KoPub Batang';font-size: 80px; background: #c03939; color: #fff; }
+.con_text p:nth-child(1):hover {background: #3a72a9}
+.con_text p:nth-child(2) {font-family: 'KoPub Batang';font-size: 80px; color: #c03939; line-height: 150px}
+.con_text p:nth-child(3) {padding-left: 10px;font-size: 20px; line-height: 28px; font-family: 'KoPub Dotum'; }
+.con_text p:nth-child(3) span {padding-left: 10px;font-weight: 300}
+.con_text p:nth-child(4) {padding-left: 10px;font-size: 20px; line-height: 28px; font-family: 'KoPub Dotum'; }
+.con_text p:nth-child(4) span {padding-left: 10px;font-weight: 300}
+
+@media only screen and (max-width: 1180px){
+	.con_img img {width: 100%; padding-left: 20px}
+	.con_text {padding-top: 30%;}
+	.con_text p:nth-child(1) {font-size: 50px;}
+	.con_text p:nth-child(2) {font-size: 50px;line-height: 80px}
+	.con_text p:nth-child(3) {font-size:18px;}
+	.con_text p:nth-child(3) span {display: block;}
+	.con_text p:nth-child(4) {font-size: 18px; margin-top: 20px}
+	.con_text p:nth-child(4) span {display: block;}
+}
+@media only screen and (max-width: 720px){
+	#contact {background: #e7e2e2; padding-bottom: 80px}
+	#contact .container > div {float: none; text-align: center;}
+	.con_img {width: 100%;padding: 0;}
+	.con_text {width: 100%;padding-top: 30px}
+}
+
+@media only screen and (max-width: 400px){
+	#contact {padding-top: 120px}
+}
+
+
+
+
+/*==========================================
+	#top_btn
+==========================================*/
+#top_btn {display: inline-block; width: 77px; height: 119px; 
+	position: fixed; 
+	right: 20px; bottom: 20px; 
+	background: url(../images/top_btn.png) no-repeat; 
+	transition: all 0.3s;
+	z-index: 1000;}
+#top_btn:hover {bottom: 40px; transition: 0.3s; background: url(../images/top_btn2.png) no-repeat;}
+
+@media only screen and (max-width: 720px){
+	
+}
+
+
+/*==========================================
+	#footer
+==========================================*/
+#footer {background: #444; text-align: center; color: #fff; font-family: 'KoPub Dotum'; font-weight: 300;}
+#footer .container {padding: 20px 0}
+#footer img {padding: 15px 0}
+#footer span {font-size: 12px; color: #888; }
+
+
+/*==========================================
+	#팝업창
+==========================================*/
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+.modal-body .color {width: 200px; margin: 0 auto; margin-bottom: 60px}
+.modal-body .color li {width: 20%; height: 12px; float: left;}
+.modal-body h2 {
+	display: inline-block; 
+	font-size: 60px; font-weight: 700; color: #444; 
+	letter-spacing: 10px;
+	border-bottom: 5px solid #444;
+	margin-top: -0.5px
+}
+.modal-body .list-inline li {padding: 0 20px; margin-top: 40px; text-align: left;}
+.modal-body .list-inline .w29_h7 {width: 29px; height: 7px; background: #444;}
+.modal-body p {font-size: 16px; font-family: 'KoPub Dotum'; font-weight: 300;  margin-top: 10px}
+.modal-body .list-inline p span { font-weight: 700; font-size: 20px}
+.modal-body .img-centered { margin: 0 auto; margin-top: 40px}
+
+.btn {font-family: 'KoPub Dotum'; font-weight: 700; text-transform: uppercase; margin-top: 40px}
+
+
+@media only screen and (max-width: 1180px){
+	.modal-body h2 {font-size: 50px; margin-top: 10px}
+}
+
+
+@media only screen and (max-width: 720px){
+	.modal-body .color {margin-bottom: 40px}
+	.modal-body h2 {font-size: 40px; letter-spacing: 5px; border-bottom: 3px solid #444;}
+	.modal-body .list-inline li {width: 20%;padding: 0 10px; margin-top: 40px; text-align: left; vertical-align: top}
+	.modal-body p {font-size: 14px}
+	.modal-body .list-inline p span {font-size: 15px}
+}
+
+@media only screen and (max-width: 400px){
+	.modal-body h2 {font-size: 25px; letter-spacing: 3px; border-bottom: 3px solid #444;}
+}
+
